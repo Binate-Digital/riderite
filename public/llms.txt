@@ -1,0 +1,10 @@
+# RideRite
+
+> Florida's bold new rideshare. Book sedans, SUVs and trucks on demand, or drive with us and earn on your terms.
+
+RideRite is a Florida-based rideshare service offering on-demand sedan, SUV, and truck rides across the state. Riders book trips in one tap; drivers sign up their vehicle to start earning. The service complies with Florida TNC regulations including zero-tolerance drug & alcohol policy and Florida Statutes § 627.748 disclosures.
+
+## Pages
+
+- [Home](/): Overview of RideRite services, how it works, cities served, and driver signup.
+- [Florida Compliance & Safety](/legal/florida): Florida TNC disclosures, insurance coverage, driver requirements, and rider complaint mechanism.

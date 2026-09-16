@@ -1,0 +1,1 @@
+DROP POLICY IF EXISTS "Anyone can submit complaints" ON public.complaints;

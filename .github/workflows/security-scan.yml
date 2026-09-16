@@ -1,0 +1,34 @@
+name: Security Scan
+
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: ['*']
+
+jobs:
+  aikido-scan:
+    name: Aikido Security Scan
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pull-requests: write
+      security-events: write
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Run Aikido CI Scan
+        uses: AikidoSec/github-actions-workflow@v1.0.18
+        with:
+          secret-key: ${{ secrets.AIKIDO_SECRET_KEY }}
+          fail-on-dependency-scan: true
+          fail-on-sast-scan: true
+          fail-on-iac-scan: true
+          fail-on-secrets-scan: true
+          minimum-severity: 'LOW'
+          post-scan-status-comment: 'on'
+          post-sast-review-comments: 'on'
+          timeout-seconds: 600

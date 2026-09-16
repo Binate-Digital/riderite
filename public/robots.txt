@@ -1,0 +1,14 @@
+User-agent: *
+Allow: /
+Disallow: /admin
+Disallow: /dashboard
+Disallow: /account
+Disallow: /trips
+Disallow: /driver
+Disallow: /become-driver
+Disallow: /book
+Disallow: /verify-email
+Disallow: /api/
+Disallow: /lovable/
+
+Sitemap: https://getriderite.com/sitemap.xml

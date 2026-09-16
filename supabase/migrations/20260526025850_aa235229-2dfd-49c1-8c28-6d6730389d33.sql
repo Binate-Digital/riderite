@@ -1,0 +1,1 @@
+REVOKE EXECUTE ON FUNCTION public.enforce_trip_update_columns() FROM PUBLIC, anon, authenticated;
