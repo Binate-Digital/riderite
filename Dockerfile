@@ -6,4 +6,4 @@ EXPOSE 8080
 
 #CMD tail -f /dev/null
 
-CMD ["npm", "run", "dev", "--", "--host"]
+CMD ["npm", "run", "dev"]
