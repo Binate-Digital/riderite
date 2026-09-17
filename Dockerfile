@@ -2,7 +2,7 @@ FROM node:22
 
 WORKDIR /app
 
-EXPOSE 5174
+EXPOSE 8080
 
 #CMD tail -f /dev/null
 
